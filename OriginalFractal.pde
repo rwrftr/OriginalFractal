@@ -38,7 +38,7 @@ public void draw()
   }
 
   if (fracB || fracC) {
-    circle(x1, y1, size2 + 25);
+    ellipse(x1, y1, size2 + 25, size2 + 25);
   }
 
   infoSquare();
@@ -71,7 +71,7 @@ public void infoSquare()
   textSize(50);
   //text("" + angleAddition%2, 45, 220);
   noFill();
-  circle(200, 240, 80);
+  ellipse(200, 240, 80,80);
 
   stroke(255, 0, 0);
   line(200, 240, 200 - (int)(80*cos(PI/2 + angleAddition)), 
