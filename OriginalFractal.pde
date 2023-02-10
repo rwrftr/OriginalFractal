@@ -51,7 +51,7 @@ public void infoSquare()
   stroke(0);
   strokeWeight(6);
   fill(193);
-  rect(20, 20, 350, 235, 50);
+  rect(20, 20, 350, 300, 50);
   fill(0);
   text("Size: " + size1, 45, 100);
   if (fracA) {
@@ -69,7 +69,16 @@ public void infoSquare()
     text("Cole", 45, 160);
   }
   textSize(50);
-  text("" + angleAddition%2, 45, 220);
+  //text("" + angleAddition%2, 45, 220);
+  noFill();
+  circle(200, 240, 80);
+
+  stroke(255, 0, 0);
+  line(200, 240, 200 - (int)(80*cos(PI/2 + angleAddition)), 
+    240 - (int)(70*sin(PI/2 + angleAddition)));
+  fill(0);
+  stroke(0);
+
   textSize(60);
   //text("Speed: " + speed, 45, 300);
   //text("Size: " + size1, 45, 400);
